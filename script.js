@@ -22,7 +22,15 @@ funksjonen)
 ******************************************************************************/
 
 // Skriv koden for oppgave 1 her
+const numberCheck = (num) => {
+  if (num % 2 === 0) {
+    return `${num} er et partall`;
+  } else {
+    return `${num} er et oddetall`;
+  }
+};
 
+console.log(numberCheck(20));
 /******************************************************************************
 2.
 
