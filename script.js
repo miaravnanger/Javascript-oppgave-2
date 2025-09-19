@@ -29,7 +29,7 @@ const numberCheck = (num) => {
     return `${num} er et oddetall`;
   }
 };
-
+//arrow function that says "if (num) can be divided by two with no remainder, return that it is an even number. In any other case, return that its an odd number"
 console.log(numberCheck(28));
 /******************************************************************************
 2.
