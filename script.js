@@ -30,7 +30,7 @@ const numberCheck = (num) => {
   }
 };
 
-console.log(numberCheck(20));
+console.log(numberCheck(28));
 /******************************************************************************
 2.
 
@@ -40,11 +40,16 @@ Funksjonen skal ta inn en string som parameter og returnere stringen
 i STORE BOKSTAVER med et utropstegn på slutten.
 
 Eksempel: "Dette er kult" skal returnere "DETTE ER KULT!"
-
+9
 ******************************************************************************/
 
 // Skriv koden for oppgave 2 her
-
+let myText = "I love coding";
+function upperCase() {
+  const newText = myText.toUpperCase()
+  newText.split(" ").push("!").join("") ; 
+}
+console.log(newText.split(" ").push("!").join(""));
 /******************************************************************************
 3.
 
