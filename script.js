@@ -44,12 +44,17 @@ Eksempel: "Dette er kult" skal returnere "DETTE ER KULT!"
 ******************************************************************************/
 
 // Skriv koden for oppgave 2 her
-let myText = "I love coding";
-function upperCase() {
-  const newText = myText.toUpperCase()
-  newText.split(" ").push("!").join("") ; 
+// function upperCase(text) {
+//   const newText = myText.toUpperCase()
+//   newText.split(" ").push("!").join("") ;
+// }
+// console.log(newText.split(" ").push("!").join(""));
+const text = "I love coding";
+
+function changeText() {
+  return text.toUpperCase() + "!";
 }
-console.log(newText.split(" ").push("!").join(""));
+console.log(changeText("I love coding"));
 /******************************************************************************
 3.
 
