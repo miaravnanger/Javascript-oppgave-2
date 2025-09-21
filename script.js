@@ -53,13 +53,6 @@ function changeText() {
   return text.toUpperCase() + "!";
 }
 console.log(changeText(text));
-
-// different example, just using a method and making a new string with the new text. Not really a function but I wanted to try it out.
-// const text2 = "I love coding";
-
-// const newText2 = text2.toUpperCase() + "!";
-
-// console.log(newText2);
 /******************************************************************************
 3.
 
@@ -83,7 +76,7 @@ Hvis ingen timeverdi mottas, skal funksjonen returnere en feilmelding.
 ******************************************************************************/
 
 // Skriv koden for oppgave 3 her
-
+// using if/else statements to return different messages based on different cases
 function myTime(name, time) {
   if (time < 0 || time > 23) {
     return "Ugyldig tid";
@@ -124,8 +117,13 @@ Eksempel 2: ["En", "To", "Tre", "Fire", "Fem", "Seks"] skal returnere
 ******************************************************************************/
 
 // Skriv koden for oppgave 4 her
+const colors = ["Rød", "Grønn", "Blå", "Gul"];
 
-
+const removeColors = (array) => {
+  return array.slice(1, -1);
+};
+//arrow function using the array method slice() to return the elements between 1 and (not inclusive)-1
+console.log(removeColors(colors));
 /******************************************************************************
 5.
 
@@ -146,6 +144,10 @@ Eksempel 3: "   vanskelig        " skal returnere "gøy".
 ******************************************************************************/
 
 // Skriv koden for oppgave 5 her
+const myText = "    Jeg trodde ikke koding skulle være så vanskelig      ";
+const NewText = myText.trim().replace("vanskelig", "gøy");
+console.log(NewText);
+//using the string methods trim() and replace() to cut the whitespaces around the text, and replacing a word with a new word
 
 /******************************************************************************
 6.
