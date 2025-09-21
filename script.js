@@ -174,6 +174,32 @@ Ekstra utfordring: Lag et nytt array som kun inkluderer elementer som inneholder
 
 // Skriv koden for oppgave 6 her
 
+//step 1: 
+firstItem = items.shift();
+//using the array method shift() to remove the first element in the array
+console.log(items); 
+
+//step 2:
+console.log(items.indexOf("Viskelær"));
+//finding that viskelær is at index 2
+change = items.splice(2, 1, "Linjal");
+//removing index 2 and changing it to linjal
+console.log(items)
+
+//step 3
+console.log(items.indexOf("Penn"))
+console.log(items.indexOf("Notatbok"));
+//finding the index of penn an notatbok
+newChange = items.splice(0, 2, "Markeringspenn")
+//starting from index 0, remove 2 elements and replace them with markereingspenn
+console.log(items)
+
+//step 4
+newString= items.join("|");
+//using join("") to convert the array into a string with the text inside "" between each item
+console.log(newString)
+
+
 /******************************************************************************
 7.
 
