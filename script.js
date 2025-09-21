@@ -44,17 +44,22 @@ Eksempel: "Dette er kult" skal returnere "DETTE ER KULT!"
 ******************************************************************************/
 
 // Skriv koden for oppgave 2 her
-// function upperCase(text) {
-//   const newText = myText.toUpperCase()
-//   newText.split(" ").push("!").join("") ;
-// }
-// console.log(newText.split(" ").push("!").join(""));
+
+//making a string with text that I want to change
 const text = "I love coding";
 
+//making a function that returns the text in uppercase, and then adding "!" to the string
 function changeText() {
   return text.toUpperCase() + "!";
 }
-console.log(changeText("I love coding"));
+console.log(changeText(text));
+
+// different example, just using a method and making a new string with the new text. Not really a function but I wanted to try it out.
+// const text2 = "I love coding";
+
+// const newText2 = text2.toUpperCase() + "!";
+
+// console.log(newText2);
 /******************************************************************************
 3.
 
@@ -79,6 +84,30 @@ Hvis ingen timeverdi mottas, skal funksjonen returnere en feilmelding.
 
 // Skriv koden for oppgave 3 her
 
+function myTime(name, time) {
+  if (time < 0 || time > 23) {
+    return "Ugyldig tid";
+  } else if (time === 0 || time <= 5) {
+    return `God natt ${name}`;
+  } else if (time === 6 || time <= 11) {
+    return `God morgen ${name}`;
+  } else if (time === 12 || time <= 17) {
+    return `God dag ${name}`;
+  } else if (time === 18 || time <= 23) {
+    return `God kveld ${name}`;
+  } else {
+    return `Her har det skjedd en feil`;
+  }
+}
+console.log(myTime("Mia", 2)); // returnes "God natt Mia" in the console
+console.log(myTime("Mia", 6)); //returnes "God morgen Mia" in the console
+console.log(myTime("Mia", 8)); //returns "God morgen Mia" in the console
+console.log(myTime("Mia", 17)); //returns "God dag Mia" in the console
+console.log(myTime("Mia", 21)); //returns "God kveld Mia" in the console
+console.log(myTime("Mia", 24)); //returns "Ugyldig tid" in the console
+console.log(myTime("Mia", -8)); //returns "Ugyldig tid" in the console
+console.log(myTime("Mia", "hei")); //returns "Her har det skjedd en feil" in the console
+
 /******************************************************************************
 4.
 
@@ -95,6 +124,7 @@ Eksempel 2: ["En", "To", "Tre", "Fire", "Fem", "Seks"] skal returnere
 ******************************************************************************/
 
 // Skriv koden for oppgave 4 her
+
 
 /******************************************************************************
 5.
